@@ -5,7 +5,7 @@ Demo of a fictive Smart Home dashboard application.
 This is a small collection of web components written with [Lit](https://lit.dev), intended to
 showcase several basic techniques in web components. See the accompanying [article](./ARTICLE.md)
 for an in-depth tutorial on what and how it works. A copy of the article (with better styling) can
-be found [on my blog](https://elfsternberg.comblog/minze-to-lit-conversion/).
+be found [on my blog](https://elfsternberg.com/blog/minze-to-lit-conversion/).
 
 [Demo](https://elfsternberg.com/projects/lit-smarthome-demo/)
 
