@@ -220,19 +220,9 @@ feature often creates horizontal scrolling.)  With the recent arrival of contain
 [utopia scaling](https://utopia.fyi/), I expect most websites to become both evermore stylish and
 accessible at the same time.
 
-<style>
-.smarthome-images {
-max-width: 64rem;
-width: 100%;
-display: flex;
-flex-direction: row;
-gap: 1rem;
-}
-
-.smarthome-images img { object-fit: contain; }
-</style>
-<div class="smarthome-images">
-<div><img src="smarthome-done-with-pixels.png"></div> <div><img src="smarthome-done-with-rems.png"></div>
+<div style="max-width: 64rem; width: 100%; display: flex; flex-direction: row; gap: 1rem">
+<div><img style="object-fit: contain" src="smarthome-done-with-pixels.png"></div> <div><img
+style="object-fit: contain" src="smarthome-done-with-rems.png"></div>
 </div>
 
 ## Conclusion
