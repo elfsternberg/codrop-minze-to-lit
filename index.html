@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Web Components | Demo | Codrops</title>
+  <script type="module" src="./out-tsc/src/sh-app.js"></script>
+</head>
+
+<body>
+  <sh-app>
+    <sh-sidebar></sh-sidebar>
+
+    <sh-main>
+      <sh-header>
+        <div slot="headline">Smart Home</div>
+        <div slot="sub-headline">Dashboard</div>
+
+        <nav slot="nav">
+          <a href="https://tympanus.net/codrops/?p=58877" target="_blank">Article</a>
+          <a href="https://github.com/sergejcodes/codrops-minze-demo" target="_blank">GitHub</a>
+        </nav>
+      </sh-header>
+
+      <sh-content>
+        <sh-welcome name="John Doe"></sh-welcome>
+
+        <sh-wrap headline="Stats">
+          <sh-card
+            top-line="GTM+1"
+            headline="Time"
+            value="10:42"
+            style="background: linear-gradient(220.64deg, #FDB4FF 0%, #FFC8D8 100%)"
+          ></sh-card>
+
+          <sh-card
+            top-line="Outside"
+            headline="Temperature"
+            value="12°c"
+            style="background: linear-gradient(220.64deg, #C8F5FF 0%, #B4B4FF 100%)"
+          ></sh-card>
+
+          <sh-card
+            top-line="Inside"
+            headline="Temperature"
+            value="20°c"
+            style="background: linear-gradient(220.64deg, #FFD3B4 0%, #FFC8C8 100%)"
+          ></sh-card>
+
+          <sh-card
+            top-line="Outside"
+            headline="Humidity"
+            value="76%"
+            style="background: linear-gradient(220.64deg, #B4C4FF 0%, #E7C8FF 100%)"
+          ></sh-card>
+        </sh-wrap>
+
+        <sh-wrap nowrap="true">
+          <sh-wrap headline="Quick actions" width="50%">
+            <sh-card
+              top-line="Lamps"
+              headline="Livingroom"
+              style="background: linear-gradient(220.64deg, #DDFFC2 0%, #A4FFC8 100%)"
+            >
+              <sh-switch></sh-switch>
+            </sh-card>
+
+            <sh-card
+              top-line="Lamps"
+              headline="Kitchen"
+              style="background: linear-gradient(220.64deg, #FFF5D0 0%, #FFD1C2 100%)"
+            >
+              <sh-switch></sh-switch>
+            </sh-card>
+          </sh-wrap>
+
+          <sh-wrap headline="Help" vertical="true" width="50%">
+            <sh-accordion>
+              <div slot="summary">
+                Stats
+              </div>
+
+              <div slot="details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique!
+              </div>
+            </sh-accordion>
+
+            <sh-accordion>
+              <div slot="summary">
+                Quick actions
+              </div>
+
+              <div slot="details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique!
+              </div>
+            </sh-accordion>
+
+            <sh-accordion>
+              <div slot="summary">
+                Automations
+              </div>
+
+              <div slot="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique!
+              </div>
+            </sh-accordion>
+          </sh-wrap>
+        </sh-wrap>
+      </sh-content>
+    </sh-main>
+  </sh-app>
+  <script type="module" src="./out-tsc/src/sh-app.js"></script>
+  <script type="module" src="./out-tsc/src/sh-main.js"></script>
+  <script type="module" src="./out-tsc/src/sh-accordion.js"></script>
+  <script type="module" src="./out-tsc/src/sh-button.js"></script>
+  <script type="module" src="./out-tsc/src/sh-card.js"></script>
+  <script type="module" src="./out-tsc/src/sh-content.js"></script>
+  <script type="module" src="./out-tsc/src/sh-header.js"></script>
+  <script type="module" src="./out-tsc/src/sh-sidebar.js"></script>
+  <script type="module" src="./out-tsc/src/sh-switch.js"></script>
+  <script type="module" src="./out-tsc/src/sh-welcome.js"></script>
+  <script type="module" src="./out-tsc/src/sh-wrap.js"></script>  
+
+</body>
+
+</html>
